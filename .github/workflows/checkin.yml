@@ -2,7 +2,7 @@ name: Hoyolab Auto Check-in
 
 on:
   schedule:
-    - cron: "07 11 * * *"
+    - cron: '07 11 * * *'
   workflow_dispatch:
 
 jobs:
