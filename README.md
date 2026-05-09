@@ -47,6 +47,7 @@ This Python script automates the daily check-in process for Hoyolab, allowing yo
      <cookie1>#<cookie2>#<cookie3> 
      ```
 
+
 ### Important Notes
 
 * **Cookie Security:** Keep your Hoyolab cookie safe and secure. Do not share it with anyone.
