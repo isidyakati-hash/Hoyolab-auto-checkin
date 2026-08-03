@@ -8,6 +8,8 @@ on:
 jobs:
   checkin:
     runs-on: ubuntu-latest
+    permissions:
+      actions: write
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
@@ -28,3 +30,7 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       run: |
         python main.py
+
+    - name: Keep workflow alive
+      uses: liskin/gh-workflow-keepalive@v1
+      if: github.event_name == 'schedule'
